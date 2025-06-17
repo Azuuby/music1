@@ -5,7 +5,7 @@ const songs = [
     artist: "Tevom",
     cover: "https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228",
     file: "assets/mp3/heaven sent.mp3",
-    bgVideo: "assets/video/Vid2.mp4"
+    bgVideo: "assets/video/heaven sent.mp4"
   },
   {
     title: "Save Your Tears",
