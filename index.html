@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibePlayer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <div class="video-container" id="videoContainer">
+    <video class="bg-video" id="bgVideo" autoplay muted loop>
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-seashore-with-rocks-1190-large.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+  <!-- Music Player -->
+  <div class="player" id="player">
+    <div class="player-header">
+      <div class="player-title">VIBE PLAYER</div>
+      <button class="minimize-btn" id="minimizeBtn">−</button>
+    </div>
+    
+    <button class="restore-btn" id="restoreBtn">+</button>
+    
+    <div class="cover">
+      <img id="coverImg" src="https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228" alt="Album Cover">
+    </div>
+    
+    <div class="song-info">
+      <h1 class="song-title" id="songTitle">No Song Selected</h1>
+      <p class="artist" id="artist">Artist</p>
+    </div>
+    
+    <div class="progress-container" id="progressContainer">
+      <div class="progress" id="progress"></div>
+    </div>
+    
+    <div class="time">
+      <span id="currentTime">0:00</span>
+      <span id="duration">0:00</span>
+    </div>
+    
+    <div class="controls">
+      <button class="btn" id="prevBtn">⏮</button>
+      <button class="btn btn-play" id="playBtn">▶</button>
+      <button class="btn" id="nextBtn">⏭</button>
+    </div>
+    
+    <div class="volume-container">
+      <span>🔊</span>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="0.7">
+    </div>
+    
+    <div class="visualizer" id="visualizer"></div>
+    
+    <audio id="audio"></audio>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
